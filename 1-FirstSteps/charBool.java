@@ -1,4 +1,6 @@
+
 /********************************************Character Variable********************************************/
+
 //	Char variables are kept in unicode for, hence you can use this to inatilize the variable
 
 public class charBool{
