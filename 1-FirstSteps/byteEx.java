@@ -1,4 +1,5 @@
-//        EXAMPLE OF BYTE DATA TYPE          
+
+/************************************EXAMPLE OF BYTE DATA TYPE************************************/          
 
 public class byteEx{
    public static void main(String[] args){
