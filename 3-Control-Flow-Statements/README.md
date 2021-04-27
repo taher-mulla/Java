@@ -1,12 +1,12 @@
 # 3 Control-Flow-Statements
 
->>This folder has control flow statments
+>>This folder has control flow statements
 
 -----
 
 [1. dayOfWeekSwitchStat.java](3-Control-Flow-Statements/1.dayOfWeekSwitchStat.java)
 
-This progra shows the use of switch()
+This program shows the use of switch()
 
 ---
 
@@ -19,7 +19,7 @@ Shows the sum of all digits in a number
 [3. parsing.java](3-Control-Flow-Statements/3.parsing.java)
 
 Shows the parsing(conversion) of data types to another
->eg: converting a String of valur 34, to an integer
+>eg: converting a String of value 34, to an integer
 
 ---
 
