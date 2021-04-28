@@ -1,4 +1,4 @@
-# Object Oriented Programing Part1
+# Object Oriented Programming Part1
 
 >>This file shows basic class operations like inheritance, etc.
 
@@ -12,7 +12,7 @@ Main class creates a object of the Mod class. Through the Main class the car num
 
 [2. Bankacc](4-OOP-Part1/2.bankacc/src)
 
-The Main class acceptes a few parameters, then passes them to the 'AccountFunctions' class. After this a few basic account functions can be done.
+The Main class accepts a few parameters, then passes them to the 'AccountFunctions' class. After this a few basic account functions can be done.
 
 ---
 
