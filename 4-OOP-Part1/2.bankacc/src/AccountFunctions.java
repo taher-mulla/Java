@@ -6,6 +6,7 @@ public class AccountFunctions
 	private String accName, accEmail;
 	
 	
+	//SETTING ALL THE VARIABLES
 	public void setAccNumber(int accNumber) 
 	{
 		this.accNumber=accNumber;
@@ -23,6 +24,8 @@ public class AccountFunctions
 		this.accEmail=accEmail;
 	}
 	
+	
+	//UPDATING THE FUNDS
 	public int putFunds(int putAmount)
 	{
 		if(putAmount>0)
