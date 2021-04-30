@@ -6,8 +6,8 @@
 
 [1. House-Coposition](5-OOP-Part2/1.House-Coposition/src)
 
-This is an exaple of Composition, the Room has a 'has a' relation with the other classes. The 'Room' class accpets the 'Furniture', 'Electric' and 
-'Dimensions' classes. Fro here the 'Room' class can accpet and print the valuse in those classes. 
+This is an example of Composition, the Room has a 'has a' relation with the other classes. The 'Room' class accepts the 'Furniture', 'Electric' and 
+'Dimensions' classes. Fro here the 'Room' class can accept and print the values in those classes. 
 
 ---
 
@@ -20,5 +20,5 @@ In this file you can see the use of 'super' and '@overload', keyword and functio
 
 [3. Final-Compilation](5-OOP-Part2/3.OOP-FinalChallange/src)
 
-This shows all the OOP concpets iplemented. The software is for making a burger, all the veggies are assigned and the final cost is also claculated. 
-Class 'HealthyBurger' shows us exaples of Composition and the class 'DeluxBurger' is an example of Polymorphism.
+This shows all the OOP concepts implemented. The software is for making a burger, all the veggies are assigned and the final cost is also calculated. 
+Class 'HealthyBurger' shows us examples of Composition and the class 'DeluxBurger' is an example of Polymorphism.

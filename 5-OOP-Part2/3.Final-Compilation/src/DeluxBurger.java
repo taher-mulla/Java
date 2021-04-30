@@ -1,4 +1,4 @@
-//Inheritance example
+//Polymorphism example
 public class DeluxBurger extends BaseBurger{        
 
     public DeluxBurger(String breadType, String meatType) {
