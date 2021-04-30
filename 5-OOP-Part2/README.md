@@ -18,7 +18,7 @@ In this file you can see the use of 'super' and '@overload', keyword and functio
 
 ---
 
-[3. Final-Compilation](5-OOP-Part2/3.OOP-FinalChallange/src)
+[3. Final-Compilation](5-OOP-Part2/3.Final-Compilation/src)
 
 This shows all the OOP concepts implemented. The software is for making a burger, all the veggies are assigned and the final cost is also calculated. 
 Class 'HealthyBurger' shows us examples of Composition and the class 'DeluxBurger' is an example of Polymorphism.
