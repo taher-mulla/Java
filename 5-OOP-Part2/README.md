@@ -4,7 +4,7 @@
 
 ---
 
-[1. House-Coposition](5-OOP-Part2/1.House-Coposition/src)
+[1. House-Coposition](5-OOP-Part2/1.House-Coposition/src/)
 
 This is an example of Composition, the Room has a 'has a' relation with the other classes. The 'Room' class accepts the 'Furniture', 'Electric' and 
 'Dimensions' classes. Fro here the 'Room' class can accept and print the values in those classes. 
