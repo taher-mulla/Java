@@ -4,6 +4,6 @@
 
 ---
 
-[1. Tournament](1.Tournament/src/HockeyTeam.java)
+[1. Tournament](1.Tournament/src)
 
 Here main uses league to create different types of teams, like football and hockey. The example of generics can be seen in class Leaguea.
