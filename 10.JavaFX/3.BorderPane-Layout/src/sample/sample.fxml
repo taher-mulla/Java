@@ -1,0 +1,39 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text="This is a lable" alignment="center" BorderPane.alignment="CENTER"
+               style="-fx-border-color: blue; -fx-border-width: 5; -fx-border-style: dashed"/>
+    </top>
+
+    <left>
+        <Label text="This is the Left Label"/>
+    </left>
+
+    <center>
+        <Label text="This is the centre Label and has long text ......xxxxx.x..x.x.zz"/>
+    </center>
+
+    <right>
+        <Label text="This is thr right Label"/>
+    </right>
+
+    <bottom>
+        <HBox spacing="10" alignment="TOP_RIGHT" style="-fx-border-color: blue;
+                -fx-border-width: 5; -fx-border-style: dashed">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="One" prefWidth="90"/>
+            <Button text="Two" prefWidth="90"/>
+            <Button text="Three" prefWidth="90"/>
+        </HBox>
+    </bottom>
+</BorderPane>

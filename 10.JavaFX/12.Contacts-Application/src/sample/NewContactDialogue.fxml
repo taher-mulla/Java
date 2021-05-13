@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogueControler">
+
+    <content>
+        <GridPane hgap="10" vgap="10">
+
+            <Label minWidth="0" text="First Name: " GridPane.rowIndex="0" />
+            <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Last Name:" GridPane.rowIndex="1" />
+            <TextField fx:id="lastNaeTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label minWidth="-Infinity" text="Phone Number:" GridPane.rowIndex="2" />
+            <TextField fx:id="phoneNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Notes:" GridPane.rowIndex="3" />
+            <TextArea fx:id="notesTextField" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        </GridPane>
+    </content>
+
+
+
+
+</DialogPane>

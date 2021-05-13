@@ -1,0 +1,65 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+    <Label text="My Stack pane label" style="-fx-background-color: green"/>
+    <Button text="Button One" style="-fx-background-color: red"/>
+    <Label text="Label" style="-fx-background-color: blue"/>
+</StackPane>
+
+
+
+<!-- VBox WILL NOW WRAP IT WILL CUT THE BUTTONS-->
+<!--<VBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">-->
+<!--    <Button text="Button One"/>-->
+<!--    <Button text="Button Two"/>-->
+<!--    <Button text="Button Three"/>-->
+<!--    <Button text="Button Four"/>-->
+<!--    <Button text="Button Five"/>-->
+<!--    <Button text="Button Six"/>-->
+<!--    <Button text="Button Seven"/>-->
+<!--    <Button text="Button Eight"/>-->
+<!--    <Button text="Button Nine"/>-->
+<!--</VBox>-->
+
+
+<!--******************* Below is TilePane *******************-->
+<?import javafx.scene.layout.TilePane?>
+<!--<TilePane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">-->
+<!--    <Button text="Button One"/>-->
+<!--    <Button text="Button Two"/>-->
+<!--    <Button text="Button Three"/>-->
+<!--    <Button text="Button Four"/>-->
+<!--    <Button text="Button Five"/>-->
+<!--    <Button text="Button Six"/>-->
+<!--    <Button text="Button Seven"/>-->
+<!--    <Button text="Button Eight"/>-->
+<!--    <Button text="Button Nine"/>-->
+<!--</TilePane>-->
+
+
+<!--******************* Below is FlowPane *******************-->
+<!-- THIS WILL WRAP THE CHILDREN AND NOT CUT THE-->
+<!--<FlowPane fx:controller="sample.Controller"-->
+<!--          xmlns:fx="http://javafx.com/fxml" orientation="VERTICAL">-->
+<!--    <Button text="Button One"/>-->
+<!--    <Button text="Button Two"/>-->
+<!--    <Button text="Button Three"/>-->
+<!--    <Button text="Button Four"/>-->
+<!--    <Button text="Button Five"/>-->
+<!--    <Button text="Button Six"/>-->
+<!--    <Button text="Button Seven"/>-->
+<!--    <Button text="Button Eight"/>-->
+<!--    <Button text="Button Nine"/>-->
+<!--</FlowPane>-->

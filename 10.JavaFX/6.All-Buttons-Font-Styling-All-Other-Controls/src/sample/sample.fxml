@@ -1,0 +1,132 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Accordion?>
+
+
+<GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Button text="Click me" GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+        <!--       ******************* Not working due to my PC config pls try on yours *******************            -->
+<!--                <graphic>-->
+<!--                    <ImageView>-->
+<!--                        <Image url="@/toolbarButtonGraphics/general/TipOfTheDay24.gif"/>-->
+<!--                    </ImageView>-->
+<!--                </graphic>-->
+
+    </Button>
+
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="This is a text-This is a text-This is a text"
+            textFill="blueviolet" wrapText="true">
+        <font>
+            <Font name="Arial italic" size="12"/>
+        </font>
+    </Label>
+
+    <fx:define>
+        <ToggleGroup fx:id = "colorToggleGroup"/>
+    </fx:define>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Red" toggleGroup="$colorToggleGroup"/>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="Blue" toggleGroup="$colorToggleGroup" selected="true"/>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="4" text="Green" toggleGroup="$colorToggleGroup"/>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="5">
+        <CheckBox text="My check box" textFill="brown" indeterminate="true" />
+        <CheckBox text="Bat" textFill="brown" indeterminate="true" />
+        <CheckBox text="Monkey" textFill="brown" indeterminate="true" />
+        <CheckBox text="Scorpion" textFill="brown" indeterminate="true" />
+    </VBox>
+
+    <fx:define>
+        <ToggleGroup fx:id="toggleButtons"/>
+    </fx:define>
+    <HBox GridPane.rowIndex="0" GridPane.columnIndex="6">
+    <ToggleButton text="Toggle button 0" toggleGroup="$toggleButtons"/>
+    <ToggleButton text="Toggle button 1" toggleGroup="$toggleButtons"/>
+    <ToggleButton text="Toggle button 2" toggleGroup="$toggleButtons"/>
+    <ToggleButton text="Toggle button 3" toggleGroup="$toggleButtons"/>
+    </HBox>
+
+    <TextField GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <ComboBox GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.columnSpan="4">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Option 1 is very big"/>
+                <String fx:value="Option 2" />
+                <String fx:value="Option 3"/>
+                <String fx:value="Option 4"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Option 100"/>
+        </value>
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="1" GridPane.columnIndex="6">
+        <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Choice Box 1"/>
+                  <String fx:value="Choice Box 2"/>
+                  <String fx:value="Choice Box 3"/>
+                  <String fx:value="Choice Box 4"/>
+                  <String fx:value="Choice Box 5"/>
+              </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <Slider GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="4" min="0" max="100"
+                showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
+
+    <Spinner GridPane.rowIndex="2" GridPane.columnIndex="4" min="0" max="100" editable="true" initialValue="50"/>
+
+    <ColorPicker GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+    <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Accordion expandedPane="$tp3" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.columnSpan="3">
+        <panes>
+            <TitledPane  text="Titled pane 1">
+                <Label text="Lable of Titled Pane 1"/>
+            </TitledPane>
+        </panes>
+        <panes>
+            <TitledPane  text="Titled pane 2" >
+                <Label text="Lable of Titled Pane 2"/>
+            </TitledPane>
+        </panes>
+        <panes>
+            <TitledPane fx:id="tp3" text="Titled pane 3" >
+                <Label text="Lable of Titled Pane 3"/>
+            </TitledPane>
+        </panes>
+    </Accordion>
+
+</GridPane>

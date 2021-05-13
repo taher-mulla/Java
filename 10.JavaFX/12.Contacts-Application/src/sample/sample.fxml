@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainWindow" prefHeight="487.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <TableView fx:id="tableView" blendMode="DARKEN" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tableViewFirstName" maxWidth="150.0" minWidth="150.0" style="-fx-background-color: grey;" text="First Name" />
+          <TableColumn fx:id="tableViewLastName" maxWidth="150.0" minWidth="150.0" text="Last Name" />
+            <TableColumn fx:id="tableViewPhoneNumber" maxWidth="200.0" minWidth="200.0" style="-fx-background-color: grey;" text="Phone Number" />
+            <TableColumn fx:id="tableViewNotes" prefWidth="100.0" text="Notes" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <top>
+      <MenuButton alignment="CENTER" mnemonicParsing="false" text="Options" BorderPane.alignment="TOP_LEFT">
+        <items>
+          <MenuItem mnemonicParsing="false" text="New" onAction="#menuItemNewClicked"/>
+          <MenuItem mnemonicParsing="false" text="Edit" onAction="#menuItemEditClicked" />
+            <MenuItem mnemonicParsing="false" text="Delete" onAction="#menuItemDeleteClicked"/>
+        </items>
+      </MenuButton>
+   </top>
+</BorderPane>
