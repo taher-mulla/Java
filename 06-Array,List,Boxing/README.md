@@ -2,7 +2,7 @@
 
 >>This file has example programs of these data structures. Various methods and functions related to these have been used and explained. Good practices related to all of these are also shown.
 
---
+---
 
 #### [1. Array List Mobile Contacts](1.Array-List-Mobile-Contacts/src/Main.java)
 
