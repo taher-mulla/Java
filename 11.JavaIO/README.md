@@ -1,4 +1,4 @@
-# 11. Java Input-Output
+# Java Input-Output
 
 >>This folder has applications demonstrating how to access files, folders, and directories using Java. File IO and the JavaNIO examples can be seen, 
 >>most of the data files have been given paths for the same. Pls, first look at this if the application is not running. 
