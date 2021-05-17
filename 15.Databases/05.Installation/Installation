@@ -1,0 +1,15 @@
+Open the file where you want to install sqlitebrowser
+
+1) Downloading the file
+wget https://github.com/sqlitebrowser/sqlitebrowser/archive/v3.9.1.tar.gz
+
+2) Extracting file
+tar -xvf sqliteBrowser.tar.gz
+
+3) Follow the steps in here
+https://sqlitebrowser.org/dl/
+
+4) SQL JDBC file
+https://jar-download.com/artifacts/org.xerial/sqlite-jdbc/3.15.1/source-code
+
+

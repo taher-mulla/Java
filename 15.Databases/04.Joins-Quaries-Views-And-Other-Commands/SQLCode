@@ -1,0 +1,75 @@
+********** Grouping multiple tables
+sqlite> select artists.name, albums.name, songs.track, songs.title from songs
+   ...> inner join albums on songs.album = albums._id
+   ...> inner join artists on albums.artist = artists._id
+   ...> order by artists.name, albums.name, songs.track
+   ...> ;
+
+
+*********** Printing a cretain type
+*********** nested where in select and join
+*********** select -> join -> where ->order
+sqlite> select artists.name, albums.name, songs.track, songs.title from songs
+   ...> inner join albums on songs.album = albums._id
+   ...> inner join artists on albums.artist = artists._id
+   ...> where albums._id = 19
+   ...> order by artists.name, albums.name, songs.track;
+
+
+*********** matching partial strings
+*********** the % sign mmakes the wild-card
+select artists.name, albums.name, songs.track, songs.title from songs
+inner join albums on songs.album = albums._id
+inner join artists on albums.artist = artists._id
+where songs.title like '%doctor%'
+order by artists.name, albums.name, songs.track;
+
+
+************* creating a view
+************* a view is like a stored quary(lines of code) that you can call later
+create view artist_list as
+select artists.name, albums.name, songs.track, songs.title from songs
+inner join albums on songs.album = albums._id
+inner join artists on albums.artist = artists._id
+order by artists.name, albums.name, songs.track;
+*********** to view the view
+.schema
+********** to use the view and can also filter it as a normal table
+select * from artist_list
+***************** deleting a view
+drop view  artist_list;
+****************** if two columns have the same name then 
+create view artist_list as
+select artists.name as artist, albums.name as album, songs.track, songs.title from songs
+inner join albums on songs.album = albums._id
+inner join artists on albums.artist = artists._id
+order by artists.name, albums.name, songs.track;
+************** old
+name|name:1|track|title
+1000 Maniacs|Our Time in Eden|1|Candy Everybody Wants
+1000 Maniacs|Our Time in Eden|2|Circle Dream
+1000 Maniacs|Our Time in Eden|3|Eden
+************** new 
+artist|album|track|title
+1000 Maniacs|Our Time in Eden|1|Candy Everybody Wants
+1000 Maniacs|Our Time in Eden|2|Circle Dream
+
+************* not equal
+select * from songs where track <> 71;
+
+************ count function
+select count(*) from songs;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

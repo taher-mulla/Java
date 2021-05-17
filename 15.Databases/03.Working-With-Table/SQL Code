@@ -1,0 +1,21 @@
+sqlite3 music.db
+
+ select name from albums where _id = 367
+
+******* Automatic value will be generated for primary key if not assigned
+
+*************** Order By;
+select * from artists order by name;
+
+*************** Ignoring case in order by
+select * from artists order by name collate nocase;
+
+select * from artists order by name collate nocase;
+select * from artists order by name collate nocase desc;
+
+************** To corelate 2 columns;^C
+select * from albums order by artist, name collate nocase;
+
+************** Join 
+select  songs.track, songs.title, albums.name from songs join albums on songs.album = albums._id;
+
