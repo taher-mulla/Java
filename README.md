@@ -51,7 +51,7 @@ I have used the IntelliJ IDEA for all my coding. With this, the Java version I a
 
 ## Author Info
 
- - [Linkdin](www.linkedin.com/in/taher-mulla-8b9546136) 
+ - [Linkdin](https://www.linkedin.com/in/taher-mulla) 
 
  - [GitHub](https://github.com/taher-mulla)
 
